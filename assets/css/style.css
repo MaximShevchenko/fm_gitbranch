@@ -1,0 +1,19 @@
+body {background-color: aquamarine;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 300px;
+  min-height: 100px;
+  max-height: 100vh;
+  margin: auto;
+}
+input:focus{ 
+  border-color: darkblue;
+  outline-color: darkmagenta;
+
+}
+label{display:inline-block;
+margin: 0 auto;}
