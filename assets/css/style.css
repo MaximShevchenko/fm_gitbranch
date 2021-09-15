@@ -9,35 +9,124 @@
    font-family: sans-serif;
    min-height: 100vh;
    width: 100%;
+   padding-top: 50px;
  }
  .background-section{
    min-width:300px ;
    width: 100%;
    max-width: 600px;
    height: 80vh;
-   margin: 50px auto;
-
-   background-color: cadetblue;
-   border: 1px solid green;
+   margin: auto;
+   padding-top: 50px;
+   background-color: lightgrey;
+   
  }
 .card-form{
-  width: 70%;
-  height: 80%;  
-  margin: 30px auto;
-  border: 1px solid yellow;
-  background-color: white;
+  width: 80%;
+  height: 90%;  
+  margin: 0 auto;
+  
+  background-color: ivory;
 }
 form{
 
-  width :90%;
-  height: 70%;
-  display: flex;
-  flex-flow: column wrap;
-  margin: 0 auto;
-   justify-content: space-between; 
-   
-   background-color: grey;
+  min-width :200px;
+  width: 85%;
+  max-width: 100%;
+  height: 82%;
+  padding:  10px 0;
+  margin: 0 auto; 
+  
 }
 .name-field{
   display: inline-block;
+  
+  width: 100%;
+  height: 15%;
+  padding-top: 20px;
+  
 }
+.name-field>*{
+  margin:  0 10px;
+
+}
+.s-info-field{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:space-around;
+  align-items: center;
+  height: 85%;
+  width: 100%;
+  padding-top: 10px;
+ 
+
+}
+  input{
+    font-size: 18px;
+    padding-left: 10px;
+    height: 40px;}
+ .text{
+   width: 180px;
+   
+
+}
+.s-info{width: 95%;
+   
+ }
+ .main-header{
+   position: relative;
+   text-transform: capitalize; 
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: center;
+   padding: 20px;
+  padding-bottom: 10px;
+   font-size: 30px;
+   color: darkgray;
+ }
+ .main-header::after{
+   content: '';
+   border: 1px solid lightgrey;
+   padding: 0 70px;
+   position: absolute;
+   left: 65%;
+   top:50%}
+   
+   .main-header::before{
+    content: '';
+    border: 1px solid lightgrey;
+    font-weight: bold;
+    padding: 0 70px;
+    position: absolute;
+    right: 65%;
+    top:50%
+
+ }
+ .p-form{
+   text-align: center;
+   color: grey;
+   
+ }
+ .button{
+   width: 95%;
+   background-color:green;
+   text-transform: capitalize;
+   color: white;
+ }
+  .label{
+    width: 95%;
+    color: grey;
+  }
+ .box{
+   display: inline-block;
+   vertical-align: middle;
+   
+ }
+ .main-link{
+   text-decoration: none; 
+   color: green;
+   text-transform: capitalize;
+ }
+  .footer-p{
+    padding-top: 20px;
+  }
+  .footer-link{color: inherit;}
