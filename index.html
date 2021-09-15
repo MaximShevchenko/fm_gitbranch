@@ -8,14 +8,83 @@
 
   <title>Forms</title>
 </head>
-<body> 
-  <span><label for="pass"> User name</label></span>
- <form action="#">
-   <input type="text" placeholder="login" id="pass">
-  
-   <input type="password">
-   <input type="submit" value="Submit">
+<body>  
+  <!-- <form action="" method="GET">
+  <fieldset>
+    <legend>Personal data</legend>
+    <label ><span> First name </span>
+   <input autofocus
+          type="text" 
+          placeholder="First name"
+          name="firstname"
+          required
+          autocomplete="firstname">
+  </label></fieldset>
+  <label ><span> Lats name </span>
+    <input type="text" 
+           placeholder="Last name"
+           name="lastname"
+            required>
+   </label>
+   <label><span> Lats name </span>
+    <input type="text" 
+           placeholder="Email"
+           name="email"
+            required
+            autocomplete="email"
+            >
+   </label>
+
+
+   <label><span> Password </span>
+   <input type="Password">
+  </label>
+    <label><span>Male</span>
+    <input value="0" type="radio" name="state" required checked>
+    </label>
+    <label><span>Female</span>
+    <input value="1" type="radio" name="state">
+    </label>
+    
+    <fieldset><label><span>CSS</span>
+    <input value="CSS" type="checkbox" name="course">
+    </label>
+    <label><span>HTML</span>
+    <input value="HTML" type="checkbox" name="course">
+    </label>
+   <label><span>JS</span>
+    <input value="JS" type="checkbox" name="course">
+    </label>
+
+
+    <textarea name=""  cols="" rows="5"></textarea>
+      <div class="btn-block">
+     <input type="submit" value="Submit">
+   <input type="reset" value="Reset">
+  </div>
+ </form> -->
+ <section class="background-section">
+  <Section class="card-form">
+  <h1 class="main-header">register</h1>
+  <p class="p-form">create your acount. it's free and only takes a minute</p>
+  <form action="" method="GET">
+    <div class="name-field">
+    <input type="text" name="First name"  placeholder="First name" autofocus>
+    <input type="text"  name="Last name" placeholder="Last name">
+</div>
+<div>
+<input type="email" name="Email" placeholder="Email">
+<input type="password" name="Password" placeholder="Password">
+<input type="password" name="Confirm Password" placeholder="Confirm Password">
+<label >
+  <input type="checkbox"> i acsept the <a href="#">terms of use</a>& <a href="#"> privacy policy</a>
+</label>
+<input class="button" type="button" value="register now"> 
 
  </form>
+
+</Section>
+<p class="p-form footer-p">Allready have an account? <a href="#"> Sign in</a> </p>
+</section>
 </body>
 </html>
