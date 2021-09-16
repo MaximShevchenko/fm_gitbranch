@@ -3,13 +3,28 @@
   margin: 0;
   padding: 0;
  }
+
+ :root{
+   --main-color:#6e87aa;
+   --link-color: green;
+   --card-color: ivory;
+ }
+ .overflow-text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+ }
+
  body{
-   background-color: black;
-   font-size: 17px;
-   font-family: sans-serif;
    min-height: 100vh;
    width: 100%;
    padding-top: 50px;
+   
+   background-color: black;
+   
+   text-align: center;
+   font-size: 17px;
+   font-family: sans-serif;
  }
  .background-section{
    min-width:300px ;
@@ -18,19 +33,21 @@
    height: 80vh;
    margin: auto;
    padding-top: 50px;
-   background-color: lightgrey;
+
+   background-color: var(--main-color);
    
  }
 .card-form{
   width: 80%;
+  min-height: 50vh;
   height: 90%;  
   margin: 0 auto;
-  
   background-color: ivory;
 }
 form{
-
-  min-width :200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; min-width :200px;
   width: 85%;
   max-width: 100%;
   height: 82%;
@@ -39,75 +56,45 @@ form{
   
 }
 .name-field{
-  display: inline-block;
-  
-  width: 100%;
-  height: 15%;
-  padding-top: 20px;
-  
-}
-.name-field>*{
-  margin:  0 10px;
-
-}
-.s-info-field{
   display: flex;
-  flex-flow: column wrap;
-  justify-content:space-around;
-  align-items: center;
-  height: 85%;
-  width: 100%;
-  padding-top: 10px;
- 
-
+  justify-content: space-between;
 }
-  input{
+.text{width: 48%}
+
+input{
     font-size: 18px;
-    padding-left: 10px;
-    height: 40px;}
- .text{
-   width: 180px;
-   
+    padding: 10px;
+  }
 
-}
-.s-info{width: 95%;
-   
- }
- .main-header{
+ .span{
+
    position: relative;
    text-transform: capitalize; 
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   text-align: center;
    padding: 20px;
-  padding-bottom: 10px;
    font-size: 30px;
    color: darkgray;
  }
- .main-header::after{
+
+ .main-header::after,::before{
    content: '';
    border: 1px solid lightgrey;
-   padding: 0 70px;
+   padding: 0 65px;
    position: absolute;
-   left: 65%;
-   top:50%}
+   top:50%;}
    
    .main-header::before{
-    content: '';
-    border: 1px solid lightgrey;
-    font-weight: bold;
-    padding: 0 70px;
-    position: absolute;
     right: 65%;
-    top:50%
-
  }
+ .main-header::after{
+  left: 65%;
+}
  .p-form{
    text-align: center;
    color: grey;
    
  }
  .button{
-   width: 95%;
    background-color:green;
    text-transform: capitalize;
    color: white;
@@ -116,14 +103,10 @@ form{
     width: 95%;
     color: grey;
   }
- .box{
-   display: inline-block;
-   vertical-align: middle;
-   
- }
+
  .main-link{
    text-decoration: none; 
-   color: green;
+   color: var(--link-color);
    text-transform: capitalize;
  }
   .footer-p{
